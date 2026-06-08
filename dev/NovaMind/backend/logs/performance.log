@@ -1,0 +1,93 @@
+{"asctime": "2026-05-23 17:31:10,619", "name": "rag_pipeline", "levelname": "INFO", "message": "Initializing RAG Pipeline models and indices..."}
+{"asctime": "2026-05-23 17:31:42,091", "name": "rag_pipeline", "levelname": "INFO", "message": "Initializing RAG Pipeline models and indices..."}
+{"asctime": "2026-05-23 17:31:46,479", "name": "rag_pipeline", "levelname": "INFO", "message": "RAG Pipeline running on device: cpu"}
+{"asctime": "2026-05-23 17:31:46,479", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading Embedding model: BAAI/bge-m3"}
+{"asctime": "2026-05-23 17:31:53,636", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading FAISS Index from: D:\\pfe2026\\chatbot_Divalto\\DC\\donneFonctionnel\\indexation\\DocDataNetoye\\faiss_db\\faiss.index"}
+{"asctime": "2026-05-23 17:31:54,665", "name": "rag_pipeline", "levelname": "INFO", "message": "FAISS Index loaded with 94658 vectors"}
+{"asctime": "2026-05-23 17:31:54,665", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading metadata from: D:\\pfe2026\\chatbot_Divalto\\DC\\donneFonctionnel\\indexation\\DocDataNetoye\\faiss_db\\metadata.pkl"}
+{"asctime": "2026-05-23 17:31:54,734", "name": "rag_pipeline", "levelname": "INFO", "message": "Loaded metadata for 94658 chunks"}
+{"asctime": "2026-05-23 17:31:54,734", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading local LLM from GGUF path: C:\\models\\qwen2.5-3b-instruct.Q4_K_M.gguf"}
+{"asctime": "2026-05-23 17:31:57,378", "name": "rag_pipeline", "levelname": "INFO", "message": "RAG Pipeline initialization completed in 15.29s"}
+{"asctime": "2026-05-23 17:32:09,361", "name": "rag_pipeline", "levelname": "INFO", "message": "Initializing RAG Pipeline models and indices..."}
+{"asctime": "2026-05-23 17:32:15,730", "name": "rag_pipeline", "levelname": "INFO", "message": "RAG Pipeline running on device: cpu"}
+{"asctime": "2026-05-23 17:32:15,731", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading Embedding model: BAAI/bge-m3"}
+{"asctime": "2026-05-23 17:32:24,353", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading FAISS Index from: D:\\pfe2026\\chatbot_Divalto\\DC\\donneFonctionnel\\indexation\\DocDataNetoye\\faiss_db\\faiss.index"}
+{"asctime": "2026-05-23 17:32:25,256", "name": "rag_pipeline", "levelname": "INFO", "message": "FAISS Index loaded with 94658 vectors"}
+{"asctime": "2026-05-23 17:32:25,256", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading metadata from: D:\\pfe2026\\chatbot_Divalto\\DC\\donneFonctionnel\\indexation\\DocDataNetoye\\faiss_db\\metadata.pkl"}
+{"asctime": "2026-05-23 17:32:25,310", "name": "rag_pipeline", "levelname": "INFO", "message": "Loaded metadata for 94658 chunks"}
+{"asctime": "2026-05-23 17:32:25,310", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading local LLM from GGUF path: C:\\models\\qwen2.5-3b-instruct.Q4_K_M.gguf"}
+{"asctime": "2026-05-23 17:32:28,136", "name": "rag_pipeline", "levelname": "INFO", "message": "RAG Pipeline initialization completed in 18.77s"}
+{"asctime": "2026-05-23 17:32:28,136", "name": "rag_pipeline", "levelname": "INFO", "message": "Starting retrieval for query: 'Comment creer un devis?'"}
+{"asctime": "2026-05-23 17:32:31,172", "name": "rag_pipeline", "levelname": "INFO", "message": "Retrieval timings \u2014 Embed: 1.909s, FAISS: 0.246s, BM25: 0.012s"}
+{"asctime": "2026-05-23 17:32:31,175", "name": "rag_pipeline", "levelname": "INFO", "message": "  #1 [392954457_Configurateur de devis technique.doc] Score: 0.8144 (Dense: 0.7349, Sparse: 1.0000)"}
+{"asctime": "2026-05-23 17:32:31,176", "name": "rag_pipeline", "levelname": "INFO", "message": "Executing LLM generation with Qwen model..."}
+{"asctime": "2026-05-23 17:32:54,688", "name": "rag_pipeline", "levelname": "INFO", "message": "LLM generation completed in 23.512s"}
+{"asctime": "2026-06-02 13:41:20,972", "name": "rag_pipeline", "levelname": "INFO", "message": "Initializing RAG Pipeline models and indices..."}
+{"asctime": "2026-06-02 13:41:29,542", "name": "rag_pipeline", "levelname": "INFO", "message": "RAG Pipeline running on device: cpu"}
+{"asctime": "2026-06-02 13:41:29,542", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading Embedding model: BAAI/bge-m3"}
+{"asctime": "2026-06-02 13:41:37,446", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading FAISS Index from: D:\\pfe2026\\chatbot_Divalto\\DC\\donneFonctionnel\\indexation\\DocDataNetoye\\faiss_db\\faiss.index"}
+{"asctime": "2026-06-02 13:41:38,476", "name": "rag_pipeline", "levelname": "INFO", "message": "FAISS Index loaded with 94658 vectors"}
+{"asctime": "2026-06-02 13:41:38,476", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading metadata from: D:\\pfe2026\\chatbot_Divalto\\DC\\donneFonctionnel\\indexation\\DocDataNetoye\\faiss_db\\metadata.pkl"}
+{"asctime": "2026-06-02 13:41:38,530", "name": "rag_pipeline", "levelname": "INFO", "message": "Loaded metadata for 94658 chunks"}
+{"asctime": "2026-06-02 13:41:38,530", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading local LLM from GGUF path: C:\\models\\qwen2.5-3b-instruct.Q4_K_M.gguf"}
+{"asctime": "2026-06-02 13:41:41,149", "name": "rag_pipeline", "levelname": "INFO", "message": "RAG Pipeline initialization completed in 20.18s"}
+{"asctime": "2026-06-02 13:41:41,155", "name": "rag_pipeline", "levelname": "INFO", "message": "Starting retrieval for query: 'Comment creer un devis?'"}
+{"asctime": "2026-06-02 13:41:43,420", "name": "rag_pipeline", "levelname": "INFO", "message": "Retrieval timings \u2014 Embed: 1.384s, FAISS: 0.041s, BM25: 0.001s"}
+{"asctime": "2026-06-02 13:41:43,420", "name": "rag_pipeline", "levelname": "INFO", "message": "  #1 [392954457_Configurateur de devis technique.doc] Score: 0.8144 (Dense: 0.7349, Sparse: 1.0000)"}
+{"asctime": "2026-06-02 13:41:43,421", "name": "rag_pipeline", "levelname": "INFO", "message": "  #2 [10563716559_Configurateur de devis technique.doc] Score: 0.7724 (Dense: 0.7106, Sparse: 0.9167)"}
+{"asctime": "2026-06-02 13:41:43,421", "name": "rag_pipeline", "levelname": "INFO", "message": "  #3 [460427033_Configurateur de devis technique.doc] Score: 0.7721 (Dense: 0.6770, Sparse: 0.9939)"}
+{"asctime": "2026-06-02 13:41:43,421", "name": "rag_pipeline", "levelname": "INFO", "message": "Executing LLM generation with Qwen model..."}
+{"asctime": "2026-06-02 13:42:22,813", "name": "rag_pipeline", "levelname": "INFO", "message": "LLM generation completed in 39.392s"}
+{"asctime": "2026-06-02 13:42:24,325", "name": "rag_pipeline", "levelname": "INFO", "message": "Query execution: User=test_user_align@example.com, Conv=f1bde48e-b42e-4020-8374-451f1ff9e78e, TotalTime=61.842s, GenTime=39.392s"}
+{"asctime": "2026-06-06 21:41:32,179", "name": "rag_pipeline", "levelname": "INFO", "message": "Initializing RAG Pipeline models and Qdrant client..."}
+{"asctime": "2026-06-06 21:41:41,867", "name": "rag_pipeline", "levelname": "INFO", "message": "RAG Pipeline running on device: cpu"}
+{"asctime": "2026-06-06 21:41:41,868", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading Embedding model: BAAI/bge-m3"}
+{"asctime": "2026-06-06 21:41:49,038", "name": "rag_pipeline", "levelname": "INFO", "message": "Connecting to Qdrant at localhost:6333 (collection: novamind_docs)"}
+{"asctime": "2026-06-06 21:41:49,209", "name": "rag_pipeline", "levelname": "INFO", "message": "Qdrant collection 'novamind_docs' connected \u2014 76 vectors indexed"}
+{"asctime": "2026-06-06 21:41:49,209", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading local LLM from GGUF path: C:\\models\\qwen2.5-3b-instruct.Q4_K_M.gguf"}
+{"asctime": "2026-06-06 21:41:52,936", "name": "rag_pipeline", "levelname": "INFO", "message": "RAG Pipeline initialization completed in 20.75s"}
+{"asctime": "2026-06-06 21:51:05,576", "name": "rag_pipeline", "levelname": "INFO", "message": "Initializing RAG Pipeline models and Qdrant client..."}
+{"asctime": "2026-06-06 21:51:12,936", "name": "rag_pipeline", "levelname": "INFO", "message": "RAG Pipeline running on device: cpu"}
+{"asctime": "2026-06-06 21:51:12,937", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading Embedding model: BAAI/bge-m3"}
+{"asctime": "2026-06-06 21:51:19,975", "name": "rag_pipeline", "levelname": "INFO", "message": "Connecting to Qdrant at localhost:6333 (collection: novamind_docs)"}
+{"asctime": "2026-06-06 21:51:20,148", "name": "rag_pipeline", "levelname": "INFO", "message": "Qdrant collection 'novamind_docs' connected \u2014 76 vectors indexed"}
+{"asctime": "2026-06-06 21:51:20,148", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading local LLM from GGUF path: C:\\models\\qwen2.5-3b-instruct.Q4_K_M.gguf"}
+{"asctime": "2026-06-06 21:51:24,079", "name": "rag_pipeline", "levelname": "INFO", "message": "RAG Pipeline initialization completed in 18.50s"}
+{"asctime": "2026-06-06 21:51:24,083", "name": "rag_pipeline", "levelname": "INFO", "message": "Starting retrieval for query: 'Comment faire une demande de prepaiement via PayZen ?'"}
+{"asctime": "2026-06-06 21:51:26,057", "name": "rag_pipeline", "levelname": "INFO", "message": "Retrieval timings \u2014 Embed: 1.778s, Qdrant: 0.196s"}
+{"asctime": "2026-06-06 21:51:26,060", "name": "rag_pipeline", "levelname": "INFO", "message": "  #1 [460425558_Payzen_chunk_001.txt] Score: 0.7300 (Folder: Addons et solutions partenaires)"}
+{"asctime": "2026-06-06 21:51:26,060", "name": "rag_pipeline", "levelname": "INFO", "message": "  #2 [460425560_Pay Plug_chunk_001.txt] Score: 0.6056 (Folder: Addons et solutions partenaires)"}
+{"asctime": "2026-06-06 21:51:26,061", "name": "rag_pipeline", "levelname": "INFO", "message": "  #3 [460425559_Mollie_chunk_001.txt] Score: 0.5682 (Folder: Addons et solutions partenaires)"}
+{"asctime": "2026-06-06 21:51:26,061", "name": "rag_pipeline", "levelname": "INFO", "message": "Executing LLM generation with Qwen model..."}
+{"asctime": "2026-06-06 21:52:03,220", "name": "rag_pipeline", "levelname": "INFO", "message": "LLM generation completed in 37.158s"}
+{"asctime": "2026-06-07 00:40:43,400", "name": "rag_pipeline", "levelname": "INFO", "message": "Initializing RAG Pipeline models and Qdrant client..."}
+{"asctime": "2026-06-07 00:40:54,770", "name": "rag_pipeline", "levelname": "INFO", "message": "RAG Pipeline running on device: cpu"}
+{"asctime": "2026-06-07 00:40:54,771", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading Embedding model: BAAI/bge-m3"}
+{"asctime": "2026-06-07 00:41:13,084", "name": "rag_pipeline", "levelname": "INFO", "message": "Connecting to Qdrant at localhost:6333 (collection: novamind_docs)"}
+{"asctime": "2026-06-07 00:41:13,288", "name": "rag_pipeline", "levelname": "INFO", "message": "Qdrant collection 'novamind_docs' connected \u2014 76 vectors indexed"}
+{"asctime": "2026-06-07 00:41:13,288", "name": "rag_pipeline", "levelname": "INFO", "message": "Loading local LLM from GGUF path: C:\\models\\qwen2.5-3b-instruct.Q4_K_M.gguf"}
+{"asctime": "2026-06-07 00:41:17,508", "name": "rag_pipeline", "levelname": "INFO", "message": "RAG Pipeline initialization completed in 34.11s"}
+{"asctime": "2026-06-07 00:41:17,542", "name": "rag_pipeline", "levelname": "INFO", "message": "Starting retrieval for query: 'hello'"}
+{"asctime": "2026-06-07 00:41:19,921", "name": "rag_pipeline", "levelname": "INFO", "message": "Retrieval timings \u2014 Embed: 2.288s, Qdrant: 0.091s"}
+{"asctime": "2026-06-07 00:41:19,922", "name": "rag_pipeline", "levelname": "INFO", "message": "  #1 [Impressions_chunk_001.txt] Score: 0.4832 (Folder: Administration)"}
+{"asctime": "2026-06-07 00:41:19,922", "name": "rag_pipeline", "levelname": "INFO", "message": "  #2 [460425523_User feedback_chunk_001.txt] Score: 0.4579 (Folder: (me) Divalto infinity 10.7)"}
+{"asctime": "2026-06-07 00:41:19,922", "name": "rag_pipeline", "levelname": "INFO", "message": "  #3 [CheminsHarmony_chunk_001.txt] Score: 0.4246 (Folder: Administration)"}
+{"asctime": "2026-06-07 00:41:19,923", "name": "rag_pipeline", "levelname": "INFO", "message": "Executing LLM generation with Qwen model..."}
+{"asctime": "2026-06-07 00:41:33,987", "name": "rag_pipeline", "levelname": "INFO", "message": "LLM generation completed in 14.064s"}
+{"asctime": "2026-06-07 00:41:35,040", "name": "rag_pipeline", "levelname": "INFO", "message": "Query execution: User=om@gmail.com, Conv=12326436-160d-4eb7-8cc7-ec2bc2dde205, TotalTime=50.588s, GenTime=14.064s"}
+{"asctime": "2026-06-07 00:51:10,219", "name": "rag_pipeline", "levelname": "INFO", "message": "Starting retrieval for query: 'Dans quel menu de param\u00e9trage g\u00e9n\u00e9ral de Divalto Infinity doit-on activer l'IBAN Secure et renseigner la cl\u00e9 d'acc\u00e8s (Id client) ?'"}
+{"asctime": "2026-06-07 00:51:10,468", "name": "rag_pipeline", "levelname": "INFO", "message": "Retrieval timings \u2014 Embed: 0.219s, Qdrant: 0.029s"}
+{"asctime": "2026-06-07 00:51:10,468", "name": "rag_pipeline", "levelname": "INFO", "message": "  #1 [460425561_IBAN Secure_chunk_001.txt] Score: 0.6493 (Folder: Addons et solutions partenaires)"}
+{"asctime": "2026-06-07 00:51:10,469", "name": "rag_pipeline", "levelname": "INFO", "message": "  #2 [460425561_IBAN Secure_chunk_001.txt] Score: 0.6019 (Folder: Addons et solutions partenaires)"}
+{"asctime": "2026-06-07 00:51:10,469", "name": "rag_pipeline", "levelname": "INFO", "message": "  #3 [460425561_IBAN Secure_chunk_003.txt] Score: 0.5573 (Folder: Addons et solutions partenaires)"}
+{"asctime": "2026-06-07 00:51:10,469", "name": "rag_pipeline", "levelname": "INFO", "message": "Executing LLM generation with Qwen model..."}
+{"asctime": "2026-06-07 00:51:37,311", "name": "rag_pipeline", "levelname": "INFO", "message": "LLM generation completed in 26.842s"}
+{"asctime": "2026-06-07 00:51:37,319", "name": "rag_pipeline", "levelname": "INFO", "message": "Query execution: User=om@gmail.com, Conv=12326436-160d-4eb7-8cc7-ec2bc2dde205, TotalTime=27.096s, GenTime=26.842s"}
+{"asctime": "2026-06-07 00:57:20,621", "name": "rag_pipeline", "levelname": "INFO", "message": "Starting retrieval for query: 'Par quel r\u00e9seau de v\u00e9rification le service IBAN Secure passe-t-il pour lutter contre la fraude et identifier le titulaire d'un IBAN ?'"}
+{"asctime": "2026-06-07 00:57:20,853", "name": "rag_pipeline", "levelname": "INFO", "message": "Retrieval timings \u2014 Embed: 0.205s, Qdrant: 0.027s"}
+{"asctime": "2026-06-07 00:57:20,854", "name": "rag_pipeline", "levelname": "INFO", "message": "  #1 [460425561_IBAN Secure_chunk_001.txt] Score: 0.7341 (Folder: Addons et solutions partenaires)"}
+{"asctime": "2026-06-07 00:57:20,854", "name": "rag_pipeline", "levelname": "INFO", "message": "  #2 [460425561_IBAN Secure_chunk_001.txt] Score: 0.7051 (Folder: Addons et solutions partenaires)"}
+{"asctime": "2026-06-07 00:57:20,854", "name": "rag_pipeline", "levelname": "INFO", "message": "  #3 [460425561_IBAN Secure_chunk_002.txt] Score: 0.5931 (Folder: Addons et solutions partenaires)"}
+{"asctime": "2026-06-07 00:57:20,854", "name": "rag_pipeline", "levelname": "INFO", "message": "Executing LLM generation with Qwen model..."}
+{"asctime": "2026-06-07 00:57:42,913", "name": "rag_pipeline", "levelname": "INFO", "message": "LLM generation completed in 22.058s"}
+{"asctime": "2026-06-07 00:57:42,927", "name": "rag_pipeline", "levelname": "INFO", "message": "Query execution: User=om@gmail.com, Conv=12326436-160d-4eb7-8cc7-ec2bc2dde205, TotalTime=22.302s, GenTime=22.058s"}

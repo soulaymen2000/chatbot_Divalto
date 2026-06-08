@@ -1,0 +1,8 @@
+--- Chunk 45 [status=original_untouched] [score=1.00] ---
+Envois de message et de tlcopie
+Envois de message et de tlcopie
+Les tats mis par une application Harmony peuvent tre dits sur imprimante mais aussi directement faxs ou envoys
+leur destinataire via un service de messagerie lectronique (messagerie locale ou distante, Internet, ...). Attention, cette fonctionnalit ncessite l'installation sous Windows des services de messagerie et/ou de tlcopie voulus. Ces services doivent tre compatibles MAPI (interface standard de programmation d'applications de messagerie). Exemple : le service Microsoft Mail de Microsoft Exchange.
+Pour en savoir plus sur ce sujet, on se reportera au chapitre consacr
+DivaltoViewer.
+---

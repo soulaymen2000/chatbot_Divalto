@@ -1,0 +1,9 @@
+--- Chunk 66 [status=original_untouched] [score=1.00] ---
+Impressions: Introduction
+Impressions : Introduction
+Ce livre explique le fonctionnement des impressions commandes par les applications Harmony :
+Dans un premier temps, nous dcrirons les principes gnraux des impressions Windows et Harmony : gestionnaire d'impression (spouleur), imprimante par dfaut, mode graphique et mode caractres, modles d'imprimante, etc.
+Dans un deuxime temps, nous tudierons les oprations
+effectuer pour obtenir une mise en uvre optimale des impressions Harmony sous Windows.
+Pour connatre les particularits de paramtrage des imprimantes en mode client lger, consultez la documentation de xDivaltoPrinters.
+---

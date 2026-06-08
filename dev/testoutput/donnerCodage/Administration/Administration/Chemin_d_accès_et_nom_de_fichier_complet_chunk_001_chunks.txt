@@ -1,0 +1,14 @@
+--- Chunk 35 [status=original_untouched] [score=1.00] ---
+Chemin d'accs et nom de fichier complet
+Chemin d'accs et nom de fichier complet
+On nomme :
+Nom de fichier complet, le nom permettant d'identifier un fichier (ou un programme) de manire absolue dans l'ordinateur.
+Par exemple :
+c:/divalto/sys/xtools.dhop
+c:/divalto/sys/fconfig.dhfi
+d:/fichiers/comptabilit/compta.dhfi
+Chemin d'accs, la suite de dossiers menant au fichier.
+Dans l'exemple :
+c:/divalto/sys/
+d:/fichiers/comptabilit
+---

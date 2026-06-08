@@ -1,0 +1,26 @@
+--- Chunk 74 [status=accepted] [score=0.87] ---
+Mthode de slection du couple imprimante / paramtrage
+Mthode de slection du couple imprimante / paramtrage
+Harmony emploie la mthode suivante pour slectionner un couple imprimante / paramtrage :
+Si le modle prcise un format d'impression (format pour le spool), Harmony recherche un chapitre [GraphPrinter-xxxx] rfrenant ce format. On associe ainsi un couple imprimante/ paramtrage
+chaque format :
+[GraphPrinter-xxxx]
+device=...
+... (commandes de paramtrage "Windows")
+[GraphPrinter-yyyy]
+device=...
+... (commandes de paramtrage "Windows")
+Remarque : si un chapitre ne prcise pas de commandes de paramtrage, Harmony utilise les paramtres dfinis pour l'imprimante au niveau du gestionnaire d'impression. Si le modle ne prcise pas de format ou si le format n'est pas rfrenc comme indiqu ci-dessus, Harmony recherche le chapitre gnrique [GraphPrinter].
+---
+--- Chunk 75 [status=accepted] [score=0.84] ---
+On associe ainsi un couple imprimante / paramtrage aux impressions sans format :
+[GraphPrinter]
+device=...
+... (commandes de paramtrage "Windows")
+Remarque : si ce chapitre ne prcise pas de commandes de paramtrage, Harmony utilise les paramtres dfinis pour l'imprimante au niveau du gestionnaire d'impression. Enfin, si aucun de ces chapitres n'est prsent dans Divalto.ini, c'est l'imprimante par dfaut de Windows qui est utilise. Dans ce cas :
+- Si le chapitre [DefaultGraphPrinter] est prsent, Harmony utilise les paramtres d'impression dfinis dans ce chapitre. - Si le chapitre [DefaultGraphPrinter] est absent, Harmony utilise les paramtres d'impression dfinis au niveau du gestionnaire d'impressions. Remarques :
+Lorsque vous faites figurer des paramtres d'impression "Windows" dans un chapitre [GraphPrinter], vous les dfinissez au niveau d'Harmony. Ce paramtrage de l'imprimante associe n'interfre pas avec le paramtrage dfini au niveau du gestionnaire d'impression de Windows : ainsi, vous changez les paramtres d'dition des tats Harmony mais vous ne touchez pas aux paramtres d'dition des autres applications Windows (Word, Excel, ...). Aucune diff
+---
+--- Chunk 76 [status=accepted_empty_sub] [score=0.00] ---
+rence n'est faite au niveau du format entre lettres minuscules et majuscules.
+---

@@ -1,0 +1,14 @@
+--- Chunk 54 [status=original_untouched] [score=1.00] ---
+Fichier des utilisateurs
+Fichier des utilisateurs
+Harmony gre une base de donnes des utilisateurs (fichier Xlogf.dhfi). Tout utilisateur travaillant sous Harmony doit s'identifier pralablement, de manire
+mettre en place en particulier :
+Ses chemins implicites.
+Ses droits d'accs ou codes de confidentialit (utiliss par les programmes et les menus d'Harmony pour autoriser ou non certaines actions).
+La gestion des utilisateurs est assure par le programme Xlog1.dhop (ou par le menu Divalto.dhop).
+Le fichier Xlogf peut tre stock localement (un fichier par ordinateur) ou de manire centralise sur un serveur Harmony (un fichier unique pour tout le site).
+Pour plus de dtails, on se reportera aux paragraphes du chapitre des utilitaires consacrs
+Xlog et Xlog1 et
+la rubrique Dclaration des utilisateurs.
+Voir aussi : Import et synchronisation des utilisateurs dun annuaire LDAP.
+---

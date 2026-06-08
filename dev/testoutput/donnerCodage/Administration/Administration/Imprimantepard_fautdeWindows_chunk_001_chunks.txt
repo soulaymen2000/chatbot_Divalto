@@ -1,0 +1,5 @@
+--- Chunk 68 [status=original_untouched] [score=1.00] ---
+Imprimante par dfaut de Windows
+Imprimante par dfaut de Windows
+Le gestionnaire d'impression permet de dfinir une imprimante "par dfaut". Lors d'une dition, c'est cette imprimante qui sera automatiquement utilise si aucune autre imprimante n'est slectionne auparavant.
+---

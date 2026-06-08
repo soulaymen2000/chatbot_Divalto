@@ -1,0 +1,14 @@
+--- Chunk 31 [status=original_untouched] [score=1.00] ---
+Administration d'Harmony: Introduction
+Administration d'Harmony : Introduction
+Ce livre introduit dans un premier temps quelques points indispensables
+une bonne matrise d'Harmony,
+savoir les notions de :
+Tche.
+Accs aux fichiers.
+Fichier des utilisateurs.
+Puis il traite de l'administration d'Harmony en abordant les points suivants :
+Impressions.
+Gestion des fentres et des programmes.
+Gestion des tableaux.
+---

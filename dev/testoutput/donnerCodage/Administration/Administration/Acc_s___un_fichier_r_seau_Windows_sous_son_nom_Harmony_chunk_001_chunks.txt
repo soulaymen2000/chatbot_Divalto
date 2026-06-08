@@ -1,0 +1,15 @@
+--- Chunk 29 [status=original_untouched] [score=1.00] ---
+Accs
+un fichier rseau Windows sous son nom Harmony
+Accs
+un fichier rseau Windows avec son nom Harmony
+Certaines applications permettent douvrir un fichier rseau  Windows  (par exemple, un fichier Word ou Excel), en fournissant son nom Xlan Harmony (fonction WinShellExecute du langage Diva). Ceci ne peut fonctionner que sil existe une stricte quivalence entre le nom Xlan Harmony et le nom Windows de ce fichier. Pour cela, il faut imprativement :
+Ct client, que le nom donn au serveur dans la table des serveurs soit son nom NetBios.
+Ct serveur, que chaque chemin dfini dans la table des chemins mne
+un dossier partag, avec, comme nom de partage, le nom du chemin Harmony.
+Exemple :
+Soit le serveur de nom NetBios MonServeur et le chemin Harmony CheminSurServeur pointant sur le dossier du serveur C:\Divalto\Fichiers. On dsire accder depuis un client au fichier Texte.doc stock dans le dossier Fichiers. Il faut alors :
+Ct client, que le serveur soit dclar sous le nom MonServeur dans la table des serveurs.
+Ct serveur, que le dossier C:\Divalto\Fichiers soit partag, avec comme nom de partage CheminSurServeur.
+On accdera ainsi au fichier sous le nom //MonServeur/CheminSurServeur/Texte.doc, aussi bien sous Harmony que sous Windows.
+---

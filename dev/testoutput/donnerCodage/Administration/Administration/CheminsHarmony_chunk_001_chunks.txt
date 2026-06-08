@@ -1,0 +1,15 @@
+--- Chunk 36 [status=original_untouched] [score=1.00] ---
+Chemins Harmony
+Chemins Harmony
+Pour raccourcir les noms de fichier ou convenir de noms de chemin plus parlants, des "chemins Harmony" peuvent remplacer tout ou partie des chemins d'accs rels aux fichiers.
+Par exemple :
+Divalto
+pour c:/divalto
+Compta
+pour d:/fichiers/comptabilit
+Si un nom de fichier Harmony commence par "/", le premier segment du chemin d'accs est un nom de chemin Harmony : ce nom sera remplac par le chemin rel qu'il reprsente pour donner le nom de fichier complet. Par exemple :
+/Divalto/sys/xtools.dhop  ==>  c:/divalto/sys/xtools.dhop
+/Compta/compta.dhfi       ==>  d:/fichiers/comptabilit/compta.dhfi
+Remarque :
+Chaque ordinateur dispose de sa propre table de chemins Harmony. L'emploi de chemins Harmony est facultatif en local mais obligatoire au niveau d'un serveur de rseau Xlan, comme nous allons le voir dans les rubriques suivantes.
+---

@@ -1,0 +1,10 @@
+--- Chunk 63 [status=original_untouched] [score=1.00] ---
+Gestionnaire d'impression de Windows (spouleur)
+Gestionnaire d'impression de Windows (spouleur)
+Le gestionnaire d'impression est une application fournie avec Windows qui permet :
+L'installation et la configuration des imprimantes.
+La connexion aux imprimantes du rseau.
+Le contrle de l'impression des tats.
+Lorsqu'une application dite un tat, elle cre un fichier d'impression. Celui-ci est envoy dans la file d'attente du spouleur, qui procde
+l'impression en arrire-plan.
+---

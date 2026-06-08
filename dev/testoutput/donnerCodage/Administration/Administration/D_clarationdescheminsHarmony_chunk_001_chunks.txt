@@ -1,0 +1,7 @@
+--- Chunk 40 [status=original_untouched] [score=1.00] ---
+Dclaration des chemins Harmony
+Dclaration des chemins Harmony
+Le zoom permettant la dclaration des chemins Harmony utiliss sur un poste est appel :
+Soit depuis le choix Paramtrage : Chemins Harmony du menu Harmony.dhop.
+Soit depuis l'utilitaire Xpath.dhop (bouton Chemins ou choix du menu Outils : Zoom des chemins).
+---

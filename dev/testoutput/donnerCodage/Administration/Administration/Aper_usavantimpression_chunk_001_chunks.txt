@@ -1,0 +1,21 @@
+--- Chunk 33 [status=original_untouched] [score=1.00] ---
+Aperus avant impression
+Aperus avant impression
+L'utilisateur peut obtenir un aperu
+l'cran de tous les tats (graphiques ou caractres) imprims en mode graphique. Pour ce faire, cochez l'option Aperu avant impression par dfaut au piano de l'interface d'accueil ou l'option Aperu avant impression au menu systme de la fentre d'une application Harmony.
+En mode aperu, un tat normalement dit
+l'imprimante est d'abord visualis
+l'cran par le programme utilitaire DivaltoViewer. Il peut alors :
+Consulter en dtails le contenu de l'tat.
+Demander son impression immdiate.
+Sauvegarder l'tat dans un fichier pour une consultation et/ou une impression ultrieure.
+Envoyer l'tat par fax ou par une messagerie lectronique (cette option n'est accessible que dans la version Harmony Plus du run-time).
+Etc.
+Gestion de l'option "Aperu avant impression"
+Le piano de l'interface d'accueil (IA) propose l'option Aperu avant impression par dfaut.
+Toutes les applications lances depuis l'IA hritent de cette option par dfaut.
+La valeur courante de l'option est automatiquement sauvegarde : si l'utilisateur quitte l'IA et la rappelle ultrieurement, il retrouve cette valeur par dfaut.
+Le menu systme de la fentre d'une application Harmony propose l'option Aperu avant impression.
+A partir de ce menu, l'utilisateur peut modifier ponctuellement la valeur de l'option aperu.
+La nouvelle valeur est prise en compte uniquement pour le programme en cours. Elle n'est pas sauvegarde.
+---

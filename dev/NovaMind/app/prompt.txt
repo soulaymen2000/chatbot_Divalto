@@ -1,0 +1,132 @@
+Analyze the entire front-end codebase and build a complete, production-ready back-end that integrates seamlessly with it.
+
+Core Requirements
+LLM Provider: Use the Google Gemini API as the AI engine for chat responses.
+Back-end Framework: Use Django with best practices and scalable architecture.
+Goal: Deliver a fully functional back-end that connects perfectly with the existing front-end.
+Tasks to Complete
+1. Full Front-End Analysis
+Analyze the entire front-end structure, pages, components, state management, routes, forms, API calls, and UI logic.
+Understand how each component should behave.
+Detect missing integrations, inconsistencies, duplicated logic, and broken flows.
+2. Build Complete Back-End in Django
+
+Create a professional back-end with clean architecture using:
+
+Django
+Django REST Framework
+JWT Authentication
+Environment variables for secrets
+Modular apps structure
+Production-ready settings
+3. Authentication System
+
+Implement:
+
+Sign up
+Sign in
+Logout
+JWT access/refresh tokens
+Password reset
+User profile management
+Session/history persistence
+4. ChatGPT-like AI System
+
+Build a complete AI chat engine using Gemini API:
+
+Real-time chat requests
+Conversation memory per user
+Store chat history
+Regenerate response
+Typing/loading states support
+Streaming response if possible
+Multi-chat conversations
+Rename / delete chats
+Context-aware conversations
+5. Synchronize Front-End with Back-End
+
+Ensure every front-end component is fully connected:
+
+Replace all mock/static data with real APIs
+Connect buttons, forms, chat input, auth pages, settings pages, history pages, themes, etc.
+Fix all broken requests and mismatched payloads
+Match front-end expected response formats exactly
+6. Feedback Mechanism (Front-End + Back-End)
+
+Create an advanced feedback system to improve LLM quality for every response:
+
+Front-End
+
+For each AI response add:
+
+👍 Helpful
+👎 Not Helpful
+Star rating (1–5)
+“Regenerate better answer”
+Optional written comment
+Back-End
+
+Store feedback data:
+
+user
+prompt
+response
+rating
+sentiment
+issue type
+timestamp
+conversation id
+Intelligence Layer
+
+Use feedback data to:
+
+Detect low-quality answers
+Improve future prompts
+Track recurring failures
+Build analytics dashboard
+Optimize prompt templates
+Measure satisfaction score
+7. Admin Dashboard
+
+Using Django Admin or custom dashboard:
+
+Users management
+Chat history
+Feedback analytics
+Usage stats
+API token usage
+Error logs
+8. Security + Production Quality
+
+Implement:
+
+Rate limiting
+Input validation
+CSRF/CORS config
+Secure environment variables
+Logging
+Error handling
+Scalable database models
+Clean serializers/services
+9. Deliverables
+
+Provide complete code with:
+
+Models
+Views
+Serializers
+URLs
+Services
+Middleware
+Gemini integration
+Front-end API integration guide
+.env.example
+Setup instructions
+Deployment-ready structure
+Expected Output Quality
+
+Write clean, senior-level code with maintainability, modularity, scalability, and clear comments.
+
+Final Goal
+
+Transform the current front-end into a fully working modern AI SaaS application similar to OpenAI ChatGPT / Anthropic Claude with a strong Django back-end powered by Gemini.

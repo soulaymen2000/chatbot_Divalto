@@ -1,0 +1,14 @@
+--- Chunk 70 [status=original_untouched] [score=1.00] ---
+Lancement automatique d'une tche de fond
+Lancement automatique d'une tche de fond
+Pour qu'un programme Harmony (compatible version 6) soit lanc automatiquement lors de l'initialisation de Windows, il suffit de l'intgrer dans le groupe "Dmarrage" du gestionnaire de programmes. La procdure
+suivre est identique
+celle dcrite au paragraphe Iconiser une application. De plus, lors de la modification des proprits :
+Pour que la fentre de la tche de fond ne reste pas ouverte, il faut aussi slectionner le choix Rduire
+l'utilisation.
+La ligne de commande doit se terminer par le caractre "&". Par exemple, la ligne de commande :
+C:\Divalto\Sys\xRtDiva.exe Prog.dhop & demande l'excution du programme Prog en tche de fond.
+Aprs le caractre "&", vous pouvez indiquer le numro de tche qui doit tre utilise (entre 2 et 16). Par exemple, la ligne de commande :
+C:\Divalto\Sys\xRtDiva.exe Prog.dhop &16 demande l'excution du programme Prog en tche de fond 16.
+Bien entendu, deux tches de fond ne peuvent tre lances avec le mme numro de tche.
+---

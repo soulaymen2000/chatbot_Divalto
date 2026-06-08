@@ -1,0 +1,9 @@
+--- Chunk 41 [status=original_untouched] [score=1.00] ---
+Dclaration des chemins implicites
+Dclaration des chemins implicites
+Les listes de chemins implicites utilises sur un poste doivent tre dclares dans des fichiers .txt implants soit localement, soit de manire centralise sur un serveur.
+Les fichiers d'implicites peuvent tre crs et modifis par l'utilitaire Xpath.dhop.
+Pour plus de prcisions, on se reportera
+la rubrique Dclaration des chemins implicites et au chapitre consacr
+Xpath.
+---

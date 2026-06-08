@@ -1,0 +1,20 @@
+--- Chunk 58 [status=accepted_retry_depth_3] [score=0.87] ---
+Gestion des modles d'imprimante Gestion des modles d'imprimante La gestion des modles s'obtient, depuis le menu Divalto ou le menu Harmony, par la frappe de la touche Shift+F6. Cette commande lance un zoom sur le fichier des modles Fprinters. En suivant la procdure habituelle des zooms, vous pouvez crer de nouveaux modles, consulter, modifier ou supprimer des modles existants. Une fiche modle contient les champs suivants : Toutes impressions Modle d'imprimante Nom du modle (6 caractres maximum). Libell Commentaire (30 caractres maximum). Format pour le spool Ce champ de quatre caractres maximum prcise l'imprimante et le paramtrage Windows qui seront utiliss pour imprimer l'tat. Par xDivaltoPrinters, l'administrateur du systme doit tablir un lien entre ce format et le couple imprimante / paramtrage associ. Hauteur papier Nombre maximum de lignes par page (toutes orientations pour les tats graphiques ; en mode portrait uniquement pour les tats caractres).
+---
+--- Chunk 59 [status=accepted] [score=0.87] ---
+Type d'imprimante
+Si vous slectionnez l'option Maquette, toute dition effectue avec ce modle gnrera un fichier "maquette", qui pourra ensuite tre rejou indpendamment du programme ayant produit cette dition. Cette option est normalement rserve
+un usage de dveloppement et de test. Suffixer le nom du fichier maquette avec la date
+Cette option permet, lorsque le choix Maquette a t slectionn comme type d'imprimante, de suffixer le nom du fichier gnr par la date de l'dition. Elle permet d'obtenir plusieurs versions de maquette
+partir d'une mme dition. Etats caractres
+Saut de page standard
+Mthode pour raliser les sauts de page :
+Oui demande que les sauts de page soient commands par l'envoi du caractre 0C (form-feed). Ce choix est obligatoire pour les imprimantes laser. Non demande que les pages soient au besoin compltes avec des lignes blanches, jusqu' atteindre la hauteur de papier indique. Saut de page
+Commande de saut(s) de page :
+Avant : un saut de page est fait au dbut de chaque dition. Aprs : un saut de page est fait
+la fin de chaque dition. Avant et aprs : un saut de
+---
+--- Chunk 60 [status=accepted_empty_sub] [score=0.00] ---
+page est fait au dbut et
+la fin de chaque dition. Aucun : pas de saut de page en dbut ni en fin d'dition.
+---

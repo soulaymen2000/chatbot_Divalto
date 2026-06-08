@@ -1,0 +1,17 @@
+--- Chunk 52 [status=accepted] [score=0.87] ---
+Un branchement en squence peut tre obtenu en remplaant un nom de paragraphe par une "*" (toile). /Dxxxxxxx
+Envoi d'un message
+l'cran. Tous les caractres de la ligne suivant /D sont affichs. /Ea
+Branchement au paragraphe a en cas d'erreur. Cette instruction provoque la poursuite du pilotage
+partir du paragraphe de nom a, si le programme d'application lanc prcdemment a positionn l'indicateur d'erreur situ en 2576. 4 de la table de dbut de tche. /Ga
+Branchement inconditionnel au paragraphe a. Cette instruction permet de poursuivre le pilotage
+partir du paragraphe de nom a. /Ixxxxxxx
+Demande d'introduction clavier. Tous les caractres de la ligne suivant /I sont affichs. Le systme se met ensuite en attente de la frappe d'un caractre au clavier. La valeur de ce caractre pourra par la suite tre teste avec la commande /C. /La
+Dfinition du paragraphe de nom a. /OFF
+Interruption de l'affichage. Tous les affichages sont annuls jusqu' la prochaine commande /ON ou jusqu' la fin du fichier
+---
+--- Chunk 53 [status=accepted_empty_sub] [score=0.00] ---
+pilote. Toutefois, l'affichage des messages envoys par les commandes /D et /I est maintenu. /ON
+Reprise de l'affichage. Pilotage d'un masque d'cran (version 6)
+Les rgles spcifiques au pilotage des masques d'cran de la version 6 sont dcrites dans la rubrique "Pilotage de la saisie d'un masque" de la documentation en ligne de l'atelier de dveloppement Xwin6.
+---

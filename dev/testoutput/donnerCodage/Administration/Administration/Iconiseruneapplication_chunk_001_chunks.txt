@@ -1,0 +1,10 @@
+--- Chunk 64 [status=original_untouched] [score=1.00] ---
+Iconiser une application
+Iconiser une application (version 6)
+Si vous dsirez iconiser une application Harmony de la version 6, procdez comme suit :
+L'installateur d'Harmony iconise automatiquement le programme xRtDiva.exe. Faites une copie de cette icone dans le groupe "Divalto".
+Slectionnez la nouvelle icone et, par le menu <Proprits>, modifiez le nom de l'application
+lancer. Par exemple : C:\Divalto\Sys\xRtDiva.exe Harmony.dhop pour lancer le menu systme d'Harmony.
+Avec les diffrents choix du menu (<Proprits>, <Renommer>), vous pouvez aussi changer l'intitul de l'icone, changer l'icone reprsentant l'application, changer le mode d'affichage au lancement.
+Voir aussi la rubrique Paramtrage de l'icone d'une tche.
+---

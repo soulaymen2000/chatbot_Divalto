@@ -1,0 +1,24 @@
+--- Chunk 61 [status=accepted] [score=0.86] ---
+Hauteur papier
+en mode paysage
+Nombre maximum de lignes par page quand l'tat est dit en mode paysage (Cf. rubrique Rglage de la hauteur d'dition). Si ce champ est laiss
+0, c'est le paramtre "Hauteur papier" qui indique le nombre maximum de lignes par page. Mode d'impression en fonction du nombre de colonnes
+Si vous cochez la case "Mode paysage" et/ou la case "Caractres comprims" situe(s) sur la ligne :
+"Plus de 132 colonnes",
+"81
+132 colonnes",
+"1
+80 colonnes",
+les tats faisant respectivement plus de 132 caractres par ligne,
+de 81
+132 caractres par ligne, de 1
+80 caractres par ligne seront dits en mode paysage et/ou en caractres comprims (pour toutes explications complmentaires, voir la rubrique Rglage de la largeur d'dition). Fichier descriptif
+Nom du fichier descriptif d'imprimante Harmony. FIHWGRA (ou FIHWGRC) est obligatoire en mode graphique. FIHWGRC utilise des caractres plus "comprims" que FIHWGRA. Il permet donc de placer plus de caractres dans une ligne.
+---
+--- Chunk 62 [status=accepted] [score=0.82] ---
+Utilisez-le, par exemple, si votre imprimante ne permet pas d'imprimer 80 caractres par ligne en mode normal ou 132 caractres par ligne en mode comprim. Remarques :
+Le fichier de stockage des modles d'imprimante (Fprinters) est un fichier "systme", unique pour toutes les applications Harmony. Le paramtrage des imprimantes de l'installation peut donc se faire
+partir de n'importe quel menu (y compris le menu Harmony. dhop). Le mode caractres est document dans l'annexe Impressions caractres. Attention :
+Pour que les cases
+cocher "Caractres comprims" et "Mode paysage" soient prises en compte lors d'une dition, il faut que le champ <Nombre de colonnes> soit renseign dans le masque Xwin.
+---

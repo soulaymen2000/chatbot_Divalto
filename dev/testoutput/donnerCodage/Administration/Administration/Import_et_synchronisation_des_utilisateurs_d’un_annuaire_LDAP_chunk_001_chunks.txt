@@ -1,0 +1,19 @@
+--- Chunk 65 [status=original_untouched] [score=1.00] ---
+Import et synchronisation des utilisateurs dun annuaire LDAP
+Import et synchronisation des utilisateurs dun annuaire LDAP
+L'interface LDAP permet de synchroniser les utilisateurs enregistrs dans un annuaire LDAP (par exemple l'Active Directory de Microsoft) avec les utilisateurs de l'ERP Divalto.
+Il assure
+la fois l'import des utilisateurs de l'annuaire dans le fichier des utilisateurs de lERP et leur synchronisation automatique en temps rel. Ainsi :
+A l'installation de l'ERP, les utilisateurs peuvent tre imports depuis l'annuaire LDAP.
+Ensuite, larrive ou le dpart dun collaborateur dans lentreprise cre ou invalide son compte automatiquement dans lERP, sil est cr ou supprim dans lannuaire LDAP.
+Si le nombre dutilisateurs est important, cet interface acclre notablement l'administration des utilisateurs de l'ERP.
+Ce chapitre montre successivement comment :
+Dfinir des modles d'utilisateurs de l'ERP.
+Dfinir des rgles de filtrage dans l'annuaire LDAP.
+Dfinir des rgles de correspondance entre utilisateurs de l'annuaire et modles d'utilisateurs de l'ERP.
+Dfinir des rgles de correspondance entre proprits de l'annuaire et champs de la fiche utilisateur de l'ERP.
+Paramtrer, lancer ou simuler une synchronisation.
+Dfinir un ou plusieurs services assurant la synchronisation.
+Recevoir une notification des oprations ralises lors d'une synchronisation.
+Utiliser la console d'administration LDAP.
+---

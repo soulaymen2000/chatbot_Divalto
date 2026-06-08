@@ -1,0 +1,7 @@
+--- Chunk 32 [status=original_untouched] [score=1.00] ---
+Affichage et prsentation des tableaux
+Affichage et prsentation des tableaux (version 6)
+Lorsque lutilisateur modifie la prsentation (ordre et largeur des colonnes, hauteur des lignes, etc.) dun objet tableau affich par une application de la version 6, Harmony sauvegarde le nouvel tat, de manire
+ce que lutilisateur retrouve ce mme tat au prochain affichage du tableau.
+Les informations de sauvegarde sont stockes dans la base de registres. Si vous dsirez, pour une raison ou pour une autre, restaurer l'tat initial de tous les tableaux, appelez l'utilitaire xWindowsSizeReset.
+---

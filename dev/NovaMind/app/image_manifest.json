@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "results": [
+    {
+      "status": "success",
+      "path": "https://mgx-backend-cdn.metadl.com/generate/images/1156904/2026-04-26/nmkks5aaafnq/hero-ai-chat-concept.png",
+      "absolute_path": "https://mgx-backend-cdn.metadl.com/generate/images/1156904/2026-04-26/nmkks5aaafnq/hero-ai-chat-concept.png",
+      "url": "https://mgx-backend-cdn.metadl.com/generate/images/1156904/2026-04-26/nmkks5aaafnq/hero-ai-chat-concept.png",
+      "message": "Image generated successfully.\n\nNote: The image is on CDN and will be displayed automatically. Just describe what you created briefly, no need to mention filenames or URLs.",
+      "description": "Futuristic AI chat interface concept, holographic brain with neural connections floating above a sleek dark desk, glowing blue and orange light trails, modern minimalist workspace, cinematic lighting, depth of field",
+      "style": "photorealistic",
+      "filename": "hero-ai-chat-concept.jpg"
+    },
+    {
+      "status": "success",
+      "path": "https://mgx-backend-cdn.metadl.com/generate/images/1156904/2026-04-26/nmkkosyaafmq/logo-novamind-icon.png",
+      "absolute_path": "https://mgx-backend-cdn.metadl.com/generate/images/1156904/2026-04-26/nmkkosyaafmq/logo-novamind-icon.png",
+      "url": "https://mgx-backend-cdn.metadl.com/generate/images/1156904/2026-04-26/nmkkosyaafmq/logo-novamind-icon.png",
+      "message": "Image generated successfully.\n\nNote: The image is on CDN and will be displayed automatically. Just describe what you created briefly, no need to mention filenames or URLs.",
+      "description": "Minimalist app logo icon, abstract brain with a spark of inspiration, clean geometric shapes, modern tech aesthetic, blue and orange accent colors on dark background",
+      "style": "minimalist",
+      "filename": "logo-novamind-icon.png"
+    }
+  ],
+  "success_count": 2,
+  "failed_count": 0,
+  "message": "Generated 2/2 images"
+}

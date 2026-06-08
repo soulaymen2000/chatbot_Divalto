@@ -1,0 +1,116 @@
+[
+  {
+    "text": "Le processus est configuré, par défaut, pour envoyer le mail au groupe d'utilisateurs val_commercial Processus Email_IBAN_KO pour les IBAN des Clients/Fournisseurs: [IMAGE: 36a72aa2922b8da35d082612aec77698f363acb45e81f3c530] Processus Email_IBAN_KO_Paie pour les IBAN des individus de la paie: [IMAGE: c0eed67cffd9eac35f16b912978d7a6e3356c8679652fde390] Exemple de mails: [IMAGE: 8288b3a4f167ca80e4b37a1a6d9e31e56ae78c76ae4fcc9918].",
+    "source_file": "460425561_IBAN Secure_chunk_004.txt",
+    "original_path": "D:\\pfe2026\\data\\DC\\test\\donneFonctionnel\\pages\\(me) Divalto infinity 10.7\\Toutes les informations sur Divalto infinity\\Addons et solutions partenaires\\460425561_IBAN Secure_chunk_004.txt",
+    "relative_path": "donneFonctionnel/pages/(me) Divalto infinity 10.7/Toutes les informations sur Divalto infinity/Addons et solutions partenaires/460425561_IBAN Secure_chunk_004.txt",
+    "folder_path": "donneFonctionnel/pages/(me) Divalto infinity 10.7/Toutes les informations sur Divalto infinity/Addons et solutions partenaires",
+    "folder_name": "Addons et solutions partenaires",
+    "folder_depth": 5,
+    "chunk_id": 15,
+    "total_chunks": 1,
+    "token_count": 172,
+    "char_count": 432,
+    "chunk_start_position": 0,
+    "section_title": "",
+    "content_type": "text",
+    "chunking_method": "none",
+    "chunking_status": "original_untouched",
+    "retry_depth": 0,
+    "low_content": false,
+    "boundary_issue": false,
+    "validation_status": "accepted",
+    "validation_score": {
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "relevance": 1.0,
+      "boundary": 1.0,
+      "fidelity": 1.0,
+      "final_score": 1.0
+    },
+    "total_images": 6,
+    "total_tables": 0,
+    "total_code_blocks": 0,
+    "has_media": true,
+    "image_summary": [
+      "[IMAGE_36a72aa2922b8da35d082612aec77698f363acb45e81f3c530]",
+      "[IMAGE_c0eed67cffd9eac35f16b912978d7a6e3356c8679652fde390]",
+      "[IMAGE_8288b3a4f167ca80e4b37a1a6d9e31e56ae78c76ae4fcc9918]",
+      "[IMAGE: 36a72aa2922b8da35d082612aec77698f363acb45e81f3c530]",
+      "[IMAGE: c0eed67cffd9eac35f16b912978d7a6e3356c8679652fde390]",
+      "[IMAGE: 8288b3a4f167ca80e4b37a1a6d9e31e56ae78c76ae4fcc9918]"
+    ],
+    "table_summary": [],
+    "images_detailed": [
+      {
+        "image_id": "36a72aa2922b8da35d082612aec77698f363acb45e81f3c530",
+        "line": 1,
+        "position": 165,
+        "abs_position": 165,
+        "marker": "[IMAGE_36a72aa2922b8da35d082612aec77698f363acb45e81f3c530]"
+      },
+      {
+        "image_id": "c0eed67cffd9eac35f16b912978d7a6e3356c8679652fde390",
+        "line": 1,
+        "position": 294,
+        "abs_position": 294,
+        "marker": "[IMAGE_c0eed67cffd9eac35f16b912978d7a6e3356c8679652fde390]"
+      },
+      {
+        "image_id": "8288b3a4f167ca80e4b37a1a6d9e31e56ae78c76ae4fcc9918",
+        "line": 1,
+        "position": 372,
+        "abs_position": 372,
+        "marker": "[IMAGE_8288b3a4f167ca80e4b37a1a6d9e31e56ae78c76ae4fcc9918]"
+      },
+      {
+        "image_id": "36a72aa2922b8da35d082612aec77698f363acb45e81f3c530",
+        "marker": "[IMAGE: 36a72aa2922b8da35d082612aec77698f363acb45e81f3c530]",
+        "position": {
+          "char_in_chunk": 165,
+          "char_absolute": 165,
+          "line_number": 1
+        },
+        "context": {
+          "before": "l_IBAN_KO pour les IBAN des Clients/Fournisseurs:",
+          "after": "Processus Email_IBAN_KO_Paie pour les IBAN des in"
+        },
+        "marker_length": 59
+      },
+      {
+        "image_id": "c0eed67cffd9eac35f16b912978d7a6e3356c8679652fde390",
+        "marker": "[IMAGE: c0eed67cffd9eac35f16b912978d7a6e3356c8679652fde390]",
+        "position": {
+          "char_in_chunk": 294,
+          "char_absolute": 294,
+          "line_number": 1
+        },
+        "context": {
+          "before": "N_KO_Paie pour les IBAN des individus de la paie:",
+          "after": "Exemple de mails: [IMAGE: 8288b3a4f167ca80e4b37a1"
+        },
+        "marker_length": 59
+      },
+      {
+        "image_id": "8288b3a4f167ca80e4b37a1a6d9e31e56ae78c76ae4fcc9918",
+        "marker": "[IMAGE: 8288b3a4f167ca80e4b37a1a6d9e31e56ae78c76ae4fcc9918]",
+        "position": {
+          "char_in_chunk": 372,
+          "char_absolute": 372,
+          "line_number": 1
+        },
+        "context": {
+          "before": "b912978d7a6e3356c8679652fde390] Exemple de mails:",
+          "after": "."
+        },
+        "marker_length": 59
+      }
+    ],
+    "tables_detailed": [],
+    "markdown_tables": [],
+    "code_blocks": [],
+    "json_companion": "donneFonctionnel/pages/(me) Divalto infinity 10.7/Toutes les informations sur Divalto infinity/Addons et solutions partenaires/460425561_IBAN Secure_chunk_004.json",
+    "timestamp": "2026-04-14T11:46:52.257913+00:00",
+    "chunked_at": "2026-04-14T11:46:52.257913+00:00"
+  }
+]

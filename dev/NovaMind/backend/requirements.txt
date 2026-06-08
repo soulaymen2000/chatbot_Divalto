@@ -1,0 +1,31 @@
+# ─── Django Core ──────────────────────────────────────────────────────────────
+Django==4.2.13
+djangorestframework==3.15.2
+djangorestframework-simplejwt==5.3.1
+django-cors-headers==4.4.0
+django-ratelimit==4.1.0
+python-decouple==3.8
+dj-database-url==2.1.0
+Pillow==10.4.0
+
+# ─── Database ─────────────────────────────────────────────────────────────────
+psycopg2-binary>=2.9.9
+
+# ─── ML Stack (RAG Pipeline) ──────────────────────────────────────────────────
+# Sentence embeddings (BAAI/bge-m3)
+sentence-transformers>=2.7.0
+# Qdrant vector database client
+qdrant-client>=1.8.0
+# Local GGUF model inference (Qwen2.5 / Mistral)
+llama-cpp-python>=0.2.90
+# Numerics
+numpy>=1.24.0
+# Document parsing (MHTML/HTML page parsing)
+beautifulsoup4>=4.12.0
+
+# ─── Monitoring ───────────────────────────────────────────────────────────────
+sentry-sdk>=1.40.0
+python-json-logger>=2.0.7
+
+# ─── Dev / Existing ───────────────────────────────────────────────────────────
+google-generativeai==0.7.2

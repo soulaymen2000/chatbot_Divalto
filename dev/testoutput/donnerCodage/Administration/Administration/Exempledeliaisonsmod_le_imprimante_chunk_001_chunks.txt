@@ -1,0 +1,9 @@
+--- Chunk 47 [status=original_untouched] [score=1.00] ---
+Exemple de liaisons modle / imprimante
+Exemple de liaisons modle / imprimante
+Mon installation comporte deux imprimantes : une Epson sur LPT1, une HP Laser Jet sur LPT2. Je veux imprimer tous les tats caractres sur l'imprimante Epson et les tats graphiques soit sur l'imprimante Epson, soit sur l'imprimante HP. Au cas o l'utilisateur ne prciserait pas de modle particulier, je dcide que, par dfaut, les tats sortiront sur l'EPSON :
+Application Harmony Application Harmony
+Etat graphique Etat caractres Etat Graphique
+Driver EPSON Driver LASER JET
+pour IMP1 pour IMP1 pour IMP2
+---

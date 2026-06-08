@@ -1,0 +1,7 @@
+--- Chunk 69 [status=original_untouched] [score=1.00] ---
+Installation et configuration d'une imprimante Windows
+Installation et configuration d'une imprimante Windows
+Avant toute utilisation d'une imprimante sous Windows, il faut installer le pilote (driver) d'imprimante correspondant au matriel utilis. C'est le gestionnaire d'impression qui permet cette installation.
+Le gestionnaire d'impression permet aussi de configurer les imprimantes installes. Cette opration consiste
+choisir diffrents paramtres d'impression : format du papier, bac d'alimentation, nombre d'exemplaires, rsolution, intensit, etc.
+---

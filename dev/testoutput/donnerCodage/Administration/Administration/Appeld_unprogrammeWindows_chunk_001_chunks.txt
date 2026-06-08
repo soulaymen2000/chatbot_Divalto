@@ -1,0 +1,10 @@
+--- Chunk 34 [status=original_untouched] [score=1.00] ---
+Appel d'un programme Windows
+Appel d'un programme Windows
+Dans un menu ou lors d'un enchanement de programme par exemple, il est possible d'appeler directement un programme Windows (non Harmony).
+Mais attention :
+L'appel
+un programme Windows ne fonctionne qu' la question "Programme" ou par une instruction Diva : l'appel ne fonctionne pas dans un fichier pilote.
+Le passage ventuel de paramtres dpend du programme Windows appel. La notion de pilotage n'existant pas sous ce systme, la plupart des programmes n'ont aucune gestion de paramtres en entre. En gnral, il s'agira donc d'un simple lancement automatique d'un programme non Harmony.
+La fentre Harmony en cours est referme.
+---

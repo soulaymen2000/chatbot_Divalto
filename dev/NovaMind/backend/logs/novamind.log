@@ -1,0 +1,734 @@
+INFO 2026-05-04 22:00:46,037 views 14352 39140 New user registered: omrani54174@gmail.com
+WARNING 2026-05-04 22:01:01,873 gemini 14352 39140 Could not generate title: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+ERROR 2026-05-04 22:01:02,156 gemini 14352 39140 Gemini API error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 55, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\grpc\_channel.py", line 1159, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\grpc\_channel.py", line 990, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.NOT_FOUND
+	details = "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:172.217.17.42:443 {grpc_message:"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.", grpc_status:5}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\apps\chat\services\gemini.py", line 78, in generate_response
+    response = chat.send_message(new_user_message)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\generativeai\generative_models.py", line 578, in send_message
+    response = self.model.generate_content(
+        contents=history,
+    ...<5 lines>...
+        request_options=request_options,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 827, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 128, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 216, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 57, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+ERROR 2026-05-04 22:01:02,171 views 14352 39140 Gemini error for conversation 8b9e75f7-6558-4dcf-93c5-a3aaa401cdd2: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+ERROR 2026-05-04 22:03:29,244 gemini 39812 39420 Gemini API error: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 55, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\grpc\_channel.py", line 1159, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\grpc\_channel.py", line 990, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.NOT_FOUND
+	details = "models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:142.251.36.138:443 {grpc_status:5, grpc_message:"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\apps\chat\services\gemini.py", line 78, in generate_response
+    response = chat.send_message(new_user_message)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\generativeai\generative_models.py", line 578, in send_message
+    response = self.model.generate_content(
+        contents=history,
+    ...<5 lines>...
+        request_options=request_options,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 827, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 128, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 216, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 57, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+ERROR 2026-05-04 22:03:29,257 views 39812 39420 Gemini error for conversation 8b9e75f7-6558-4dcf-93c5-a3aaa401cdd2: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+ERROR 2026-05-04 22:08:45,186 gemini 33992 38036 Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 55, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\grpc\_channel.py", line 1159, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\grpc\_channel.py", line 990, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.NOT_FOUND
+	details = "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:142.250.74.74:443 {grpc_message:"models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.", grpc_status:5}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\apps\chat\services\gemini.py", line 78, in generate_response
+    response = chat.send_message(new_user_message)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\generativeai\generative_models.py", line 578, in send_message
+    response = self.model.generate_content(
+        contents=history,
+    ...<5 lines>...
+        request_options=request_options,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 827, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 128, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 216, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 57, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+ERROR 2026-05-04 22:08:45,198 views 33992 38036 Gemini error for conversation 8b9e75f7-6558-4dcf-93c5-a3aaa401cdd2: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+ERROR 2026-05-04 22:08:52,592 gemini 33992 38036 Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 55, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\grpc\_channel.py", line 1159, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\grpc\_channel.py", line 990, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.NOT_FOUND
+	details = "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:142.251.36.202:443 {grpc_message:"models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.", grpc_status:5}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\apps\chat\services\gemini.py", line 78, in generate_response
+    response = chat.send_message(new_user_message)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\generativeai\generative_models.py", line 578, in send_message
+    response = self.model.generate_content(
+        contents=history,
+    ...<5 lines>...
+        request_options=request_options,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 827, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 128, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 216, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 57, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+ERROR 2026-05-04 22:08:52,594 views 33992 38036 Gemini error for conversation 8b9e75f7-6558-4dcf-93c5-a3aaa401cdd2: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+WARNING 2026-05-04 22:09:06,703 gemini 33992 38036 Could not generate title: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+ERROR 2026-05-04 22:09:07,062 gemini 33992 38036 Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 55, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\grpc\_channel.py", line 1159, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\grpc\_channel.py", line 990, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.NOT_FOUND
+	details = "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:142.251.36.202:443 {grpc_message:"models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.", grpc_status:5}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\apps\chat\services\gemini.py", line 78, in generate_response
+    response = chat.send_message(new_user_message)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\generativeai\generative_models.py", line 578, in send_message
+    response = self.model.generate_content(
+        contents=history,
+    ...<5 lines>...
+        request_options=request_options,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 827, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 128, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 216, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 57, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+ERROR 2026-05-04 22:09:07,065 views 33992 38036 Gemini error for conversation 391ad04d-8b92-4c2b-ba6f-7240bc9461b9: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+ERROR 2026-05-04 22:10:20,668 gemini 13964 39400 Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 55, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\grpc\_channel.py", line 1159, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\grpc\_channel.py", line 990, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.NOT_FOUND
+	details = "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:142.251.36.202:443 {grpc_message:"models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.", grpc_status:5}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\apps\chat\services\gemini.py", line 78, in generate_response
+    response = chat.send_message(new_user_message)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\generativeai\generative_models.py", line 578, in send_message
+    response = self.model.generate_content(
+        contents=history,
+    ...<5 lines>...
+        request_options=request_options,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 827, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 128, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 216, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 57, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+ERROR 2026-05-04 22:10:20,673 views 13964 39400 Gemini error for conversation 391ad04d-8b92-4c2b-ba6f-7240bc9461b9: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO 2026-05-04 22:13:35,313 gemini 3332 34224 Gemini response generated. Tokens used: 172
+INFO 2026-05-04 22:14:07,405 gemini 3332 34224 Gemini response generated. Tokens used: 620
+INFO 2026-05-04 22:14:32,834 gemini 3332 34224 Gemini response generated. Tokens used: 388
+INFO 2026-05-04 22:15:23,812 gemini 3332 34224 Gemini response generated. Tokens used: 210
+INFO 2026-05-04 22:15:33,391 views 3332 34224 User logged out: omrani54174@gmail.com
+INFO 2026-05-04 22:20:33,149 views 31660 27976 User logged in: omrani54174@gmail.com
+INFO 2026-05-04 22:20:47,179 gemini 31660 27976 Gemini response generated. Tokens used: 496
+INFO 2026-05-04 22:20:51,749 views 31660 27976 User logged out: omrani54174@gmail.com
+INFO 2026-05-04 22:20:54,761 views 31660 27976 User logged in: omrani54174@gmail.com
+INFO 2026-05-05 22:57:32,929 views 46112 21960 User logged in: omrani54174@gmail.com
+INFO 2026-05-05 22:57:54,971 gemini 46112 27676 Gemini response generated. Tokens used: 629
+WARNING 2026-05-05 23:44:57,822 exceptions 4924 42924 API error [401]: User not found � view: <apps.chat.views.ConversationListCreateView object at 0x000001DD4694ECF0>
+WARNING 2026-05-05 23:44:58,185 exceptions 4924 42924 API error [401]: User not found � view: <apps.chat.views.ConversationListCreateView object at 0x000001DD47022350>
+WARNING 2026-05-05 23:48:56,955 exceptions 47820 36328 API error [401]: User not found � view: <apps.chat.views.ConversationListCreateView object at 0x000002530F2FEE40>
+WARNING 2026-05-05 23:48:57,305 exceptions 47820 47296 API error [401]: Token is blacklisted � view: <rest_framework_simplejwt.views.TokenRefreshView object at 0x000002530F3A4440>
+INFO 2026-05-05 23:49:49,774 views 47820 36328 New user registered: omrani@gmail.com
+INFO 2026-05-05 23:50:28,129 gemini 47820 36328 Gemini response generated. Tokens used: 182
+INFO 2026-05-05 23:50:48,444 gemini 47820 36328 Gemini response generated. Tokens used: 317
+INFO 2026-05-05 23:52:01,295 views 47820 36328 Conversation beddbee2-8fc6-4679-aad6-045aaafb830a deleted by user omrani@gmail.com
+WARNING 2026-05-06 20:09:05,547 exceptions 20368 34636 API error [401]: Given token not valid for any token type � view: <apps.chat.views.ConversationListCreateView object at 0x0000021E7E17ECF0>
+INFO 2026-05-06 20:09:46,131 gemini 20368 8884 Gemini response generated. Tokens used: 211
+INFO 2026-05-06 20:09:51,324 gemini 20368 34636 Gemini response generated. Tokens used: 268
+INFO 2026-05-06 20:15:49,240 views 20368 34636 New user registered: med@gmail.com
+INFO 2026-05-06 20:15:56,316 gemini 20368 38616 Gemini response generated. Tokens used: 177
+INFO 2026-05-06 20:16:06,773 gemini 20368 34636 Gemini response generated. Tokens used: 263
+INFO 2026-05-06 20:17:31,658 gemini 20368 34636 Gemini response generated. Tokens used: 496
+INFO 2026-05-06 21:00:13,183 gemini 20368 25908 Gemini response generated. Tokens used: 279
+WARNING 2026-05-11 11:30:16,470 exceptions 36412 38708 API error [401]: Given token not valid for any token type � view: <apps.chat.views.ConversationListCreateView object at 0x000002805818EE40>
+INFO 2026-05-23 17:31:10,619 rag 29812 19284 Initializing RAG Pipeline models and indices...
+INFO 2026-05-23 17:31:42,091 rag 26244 11596 Initializing RAG Pipeline models and indices...
+INFO 2026-05-23 17:31:46,479 rag 26244 11596 RAG Pipeline running on device: cpu
+INFO 2026-05-23 17:31:46,479 rag 26244 11596 Loading Embedding model: BAAI/bge-m3
+INFO 2026-05-23 17:31:53,636 rag 26244 11596 Loading FAISS Index from: D:\pfe2026\chatbot_Divalto\DC\donneFonctionnel\indexation\DocDataNetoye\faiss_db\faiss.index
+INFO 2026-05-23 17:31:54,665 rag 26244 11596 FAISS Index loaded with 94658 vectors
+INFO 2026-05-23 17:31:54,665 rag 26244 11596 Loading metadata from: D:\pfe2026\chatbot_Divalto\DC\donneFonctionnel\indexation\DocDataNetoye\faiss_db\metadata.pkl
+INFO 2026-05-23 17:31:54,734 rag 26244 11596 Loaded metadata for 94658 chunks
+INFO 2026-05-23 17:31:54,734 rag 26244 11596 Loading local LLM from GGUF path: C:\models\qwen2.5-3b-instruct.Q4_K_M.gguf
+INFO 2026-05-23 17:31:57,378 rag 26244 11596 RAG Pipeline initialization completed in 15.29s
+INFO 2026-05-23 17:32:09,361 rag 12088 28040 Initializing RAG Pipeline models and indices...
+INFO 2026-05-23 17:32:15,730 rag 12088 28040 RAG Pipeline running on device: cpu
+INFO 2026-05-23 17:32:15,731 rag 12088 28040 Loading Embedding model: BAAI/bge-m3
+INFO 2026-05-23 17:32:24,353 rag 12088 28040 Loading FAISS Index from: D:\pfe2026\chatbot_Divalto\DC\donneFonctionnel\indexation\DocDataNetoye\faiss_db\faiss.index
+INFO 2026-05-23 17:32:25,256 rag 12088 28040 FAISS Index loaded with 94658 vectors
+INFO 2026-05-23 17:32:25,256 rag 12088 28040 Loading metadata from: D:\pfe2026\chatbot_Divalto\DC\donneFonctionnel\indexation\DocDataNetoye\faiss_db\metadata.pkl
+INFO 2026-05-23 17:32:25,310 rag 12088 28040 Loaded metadata for 94658 chunks
+INFO 2026-05-23 17:32:25,310 rag 12088 28040 Loading local LLM from GGUF path: C:\models\qwen2.5-3b-instruct.Q4_K_M.gguf
+INFO 2026-05-23 17:32:28,136 rag 12088 28040 RAG Pipeline initialization completed in 18.77s
+INFO 2026-05-23 17:32:28,136 rag 12088 28040 Starting retrieval for query: 'Comment creer un devis?'
+INFO 2026-05-23 17:32:31,172 rag 12088 28040 Retrieval timings — Embed: 1.909s, FAISS: 0.246s, BM25: 0.012s
+INFO 2026-05-23 17:32:31,175 rag 12088 28040   #1 [392954457_Configurateur de devis technique.doc] Score: 0.8144 (Dense: 0.7349, Sparse: 1.0000)
+INFO 2026-05-23 17:32:31,176 rag 12088 28040 Executing LLM generation with Qwen model...
+INFO 2026-05-23 17:32:54,688 rag 12088 28040 LLM generation completed in 23.512s
+WARNING 2026-06-02 13:36:59,101 log 27380 20328 Bad Request: /api/auth/login/
+INFO 2026-06-02 13:37:17,371 views 24192 18508 User logged in: test_user_align@example.com
+ERROR 2026-06-02 13:37:17,420 log 24192 18508 Internal Server Error: /api/conversations/
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column "is_deleted" of relation "conversations" does not exist
+LINE 1: ..., "user_id", "title", "created_at", "updated_at", "is_delete...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\apps\chat\views.py", line 216, in create
+    conversation = Conversation.objects.create(
+        user=request.user,
+        title="New Conversation"
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\models\query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column "is_deleted" of relation "conversations" does not exist
+LINE 1: ..., "user_id", "title", "created_at", "updated_at", "is_delete...
+                                                             ^
+
+INFO 2026-06-02 13:41:20,957 views 6312 27692 User logged in: test_user_align@example.com
+INFO 2026-06-02 13:41:20,962 views 6312 27692 New conversation session created: f1bde48e-b42e-4020-8374-451f1ff9e78e
+INFO 2026-06-02 13:41:20,972 rag 6312 27692 Initializing RAG Pipeline models and indices...
+INFO 2026-06-02 13:41:29,542 rag 6312 27692 RAG Pipeline running on device: cpu
+INFO 2026-06-02 13:41:29,542 rag 6312 27692 Loading Embedding model: BAAI/bge-m3
+INFO 2026-06-02 13:41:37,446 rag 6312 27692 Loading FAISS Index from: D:\pfe2026\chatbot_Divalto\DC\donneFonctionnel\indexation\DocDataNetoye\faiss_db\faiss.index
+INFO 2026-06-02 13:41:38,476 rag 6312 27692 FAISS Index loaded with 94658 vectors
+INFO 2026-06-02 13:41:38,476 rag 6312 27692 Loading metadata from: D:\pfe2026\chatbot_Divalto\DC\donneFonctionnel\indexation\DocDataNetoye\faiss_db\metadata.pkl
+INFO 2026-06-02 13:41:38,530 rag 6312 27692 Loaded metadata for 94658 chunks
+INFO 2026-06-02 13:41:38,530 rag 6312 27692 Loading local LLM from GGUF path: C:\models\qwen2.5-3b-instruct.Q4_K_M.gguf
+INFO 2026-06-02 13:41:41,149 rag 6312 27692 RAG Pipeline initialization completed in 20.18s
+INFO 2026-06-02 13:41:41,155 rag 6312 27692 Starting retrieval for query: 'Comment creer un devis?'
+INFO 2026-06-02 13:41:43,420 rag 6312 27692 Retrieval timings — Embed: 1.384s, FAISS: 0.041s, BM25: 0.001s
+INFO 2026-06-02 13:41:43,420 rag 6312 27692   #1 [392954457_Configurateur de devis technique.doc] Score: 0.8144 (Dense: 0.7349, Sparse: 1.0000)
+INFO 2026-06-02 13:41:43,421 rag 6312 27692   #2 [10563716559_Configurateur de devis technique.doc] Score: 0.7724 (Dense: 0.7106, Sparse: 0.9167)
+INFO 2026-06-02 13:41:43,421 rag 6312 27692   #3 [460427033_Configurateur de devis technique.doc] Score: 0.7721 (Dense: 0.6770, Sparse: 0.9939)
+INFO 2026-06-02 13:41:43,421 rag 6312 27692 Executing LLM generation with Qwen model...
+INFO 2026-06-02 13:42:22,813 rag 6312 27692 LLM generation completed in 39.392s
+INFO 2026-06-02 13:42:22,825 title_generator 6312 27692 Generating conversation title for: 'Comment creer un devis?'
+INFO 2026-06-02 13:42:24,321 title_generator 6312 27692 Generated title: 'Créer un devis : étape à suivre' in 1.496s
+INFO 2026-06-02 13:42:24,325 views 6312 27692 Query execution: User=test_user_align@example.com, Conv=f1bde48e-b42e-4020-8374-451f1ff9e78e, TotalTime=61.842s, GenTime=39.392s
+WARNING 2026-06-02 14:18:33,491 exceptions 6920 31836 API error [401]: Given token not valid for any token type — view: <apps.chat.views.ConversationListView object at 0x0000023E2BE1A660>
+WARNING 2026-06-02 14:18:33,492 log 6920 31836 Unauthorized: /api/conversations/
+WARNING 2026-06-02 14:18:33,809 exceptions 6920 27136 API error [401]: Token is invalid or expired — view: <rest_framework_simplejwt.views.TokenRefreshView object at 0x0000023E2BE70440>
+WARNING 2026-06-02 14:18:33,810 log 6920 27136 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-06-02 14:18:39,323 exceptions 6920 31836 API error [401]: Authentication credentials were not provided. — view: <apps.chat.views.AskRAGView object at 0x0000023E2BE70440>
+WARNING 2026-06-02 14:18:39,324 log 6920 31836 Unauthorized: /api/conversations/1a4410de-7808-40e3-9107-1f77aa41baf0/messages/
+WARNING 2026-06-02 14:19:09,775 exceptions 6920 31836 API error [401]: Authentication credentials were not provided. — view: <apps.chat.views.AskRAGView object at 0x0000023E2C224CD0>
+WARNING 2026-06-02 14:19:09,775 log 6920 31836 Unauthorized: /api/conversations/1a4410de-7808-40e3-9107-1f77aa41baf0/messages/
+WARNING 2026-06-02 14:26:16,997 log 23204 25880 Bad Request: /api/auth/register/
+INFO 2026-06-02 15:58:58,502 views 11132 28156 New user registered: sou@gmail.com
+INFO 2026-06-02 15:59:33,350 views 11132 28156 New conversation session created: 11ac1e0f-3563-440b-ac85-9ebe182b84b6
+WARNING 2026-06-02 15:59:33,418 log 11132 15800 Bad Request: /api/conversations/11ac1e0f-3563-440b-ac85-9ebe182b84b6/messages/
+ERROR 2026-06-02 15:59:39,646 log 11132 15800 Internal Server Error: /api/conversations/
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\models\query.py", line 398, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\models\query.py", line 129, in __iter__
+    setattr(obj, attr_name, row[col_pos])
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: property 'message_count' of 'Conversation' object has no setter
+WARNING 2026-06-02 15:59:43,794 log 11132 15800 Bad Request: /api/conversations/11ac1e0f-3563-440b-ac85-9ebe182b84b6/messages/
+WARNING 2026-06-02 16:31:00,504 exceptions 11132 23236 API error [401]: Given token not valid for any token type — view: <apps.chat.views.AskRAGView object at 0x0000022E786CD1D0>
+WARNING 2026-06-02 16:31:00,504 log 11132 23236 Unauthorized: /api/conversations/11ac1e0f-3563-440b-ac85-9ebe182b84b6/messages/
+WARNING 2026-06-02 16:31:00,892 log 11132 23236 Bad Request: /api/conversations/11ac1e0f-3563-440b-ac85-9ebe182b84b6/messages/
+INFO 2026-06-06 21:41:32,179 rag 28088 13108 Initializing RAG Pipeline models and Qdrant client...
+INFO 2026-06-06 21:41:41,867 rag 28088 13108 RAG Pipeline running on device: cpu
+INFO 2026-06-06 21:41:41,868 rag 28088 13108 Loading Embedding model: BAAI/bge-m3
+INFO 2026-06-06 21:41:49,038 rag 28088 13108 Connecting to Qdrant at localhost:6333 (collection: novamind_docs)
+INFO 2026-06-06 21:41:49,209 rag 28088 13108 Qdrant collection 'novamind_docs' connected — 76 vectors indexed
+INFO 2026-06-06 21:41:49,209 rag 28088 13108 Loading local LLM from GGUF path: C:\models\qwen2.5-3b-instruct.Q4_K_M.gguf
+INFO 2026-06-06 21:41:52,936 rag 28088 13108 RAG Pipeline initialization completed in 20.75s
+INFO 2026-06-06 21:51:05,576 rag 22328 13068 Initializing RAG Pipeline models and Qdrant client...
+INFO 2026-06-06 21:51:12,936 rag 22328 13068 RAG Pipeline running on device: cpu
+INFO 2026-06-06 21:51:12,937 rag 22328 13068 Loading Embedding model: BAAI/bge-m3
+INFO 2026-06-06 21:51:19,975 rag 22328 13068 Connecting to Qdrant at localhost:6333 (collection: novamind_docs)
+INFO 2026-06-06 21:51:20,148 rag 22328 13068 Qdrant collection 'novamind_docs' connected — 76 vectors indexed
+INFO 2026-06-06 21:51:20,148 rag 22328 13068 Loading local LLM from GGUF path: C:\models\qwen2.5-3b-instruct.Q4_K_M.gguf
+INFO 2026-06-06 21:51:24,079 rag 22328 13068 RAG Pipeline initialization completed in 18.50s
+INFO 2026-06-06 21:51:24,083 rag 22328 13068 Starting retrieval for query: 'Comment faire une demande de prepaiement via PayZen ?'
+INFO 2026-06-06 21:51:26,057 rag 22328 13068 Retrieval timings — Embed: 1.778s, Qdrant: 0.196s
+INFO 2026-06-06 21:51:26,060 rag 22328 13068   #1 [460425558_Payzen_chunk_001.txt] Score: 0.7300 (Folder: Addons et solutions partenaires)
+INFO 2026-06-06 21:51:26,060 rag 22328 13068   #2 [460425560_Pay Plug_chunk_001.txt] Score: 0.6056 (Folder: Addons et solutions partenaires)
+INFO 2026-06-06 21:51:26,061 rag 22328 13068   #3 [460425559_Mollie_chunk_001.txt] Score: 0.5682 (Folder: Addons et solutions partenaires)
+INFO 2026-06-06 21:51:26,061 rag 22328 13068 Executing LLM generation with Qwen model...
+INFO 2026-06-06 21:52:03,220 rag 22328 13068 LLM generation completed in 37.158s
+WARNING 2026-06-07 00:27:49,580 exceptions 23316 9792 API error [401]: Given token not valid for any token type — view: <apps.chat.views.ConversationListView object at 0x000001DB18086660>
+WARNING 2026-06-07 00:27:49,581 log 23316 9792 Unauthorized: /api/conversations/
+WARNING 2026-06-07 00:27:49,727 exceptions 23316 26420 API error [401]: Token is blacklisted — view: <rest_framework_simplejwt.views.TokenRefreshView object at 0x000001DB18104440>
+WARNING 2026-06-07 00:27:49,728 log 23316 26420 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-06-07 00:28:13,307 views 23316 9792 Failed login attempt for: omrani@gmail.com
+WARNING 2026-06-07 00:28:13,307 log 23316 9792 Bad Request: /api/auth/login/
+WARNING 2026-06-07 00:28:20,895 views 23316 9792 Failed login attempt for: omrani@gmail.com
+WARNING 2026-06-07 00:28:20,896 log 23316 9792 Bad Request: /api/auth/login/
+INFO 2026-06-07 00:28:41,461 views 23316 9792 New user registered: om@gmail.com
+INFO 2026-06-07 00:28:45,173 views 23316 9792 New conversation session created: 12326436-160d-4eb7-8cc7-ec2bc2dde205
+WARNING 2026-06-07 00:28:45,244 log 23316 28244 Bad Request: /api/conversations/12326436-160d-4eb7-8cc7-ec2bc2dde205/messages/
+ERROR 2026-06-07 00:31:04,656 log 28916 33156 Internal Server Error: /api/conversations/
+Traceback (most recent call last):
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\models\query.py", line 398, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pfe2026\NovaMind\backend\venv\Lib\site-packages\django\db\models\query.py", line 129, in __iter__
+    setattr(obj, attr_name, row[col_pos])
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: property 'message_count' of 'Conversation' object has no setter
+WARNING 2026-06-07 00:31:12,193 views 28916 33156 SendMessageSerializer validation failed: Errors={'content': [ErrorDetail(string='The question must be at least 3 characters long.', code='min_length')]}, RequestData={'content': 'hi'}
+WARNING 2026-06-07 00:31:12,194 log 28916 33156 Bad Request: /api/conversations/12326436-160d-4eb7-8cc7-ec2bc2dde205/messages/
+WARNING 2026-06-07 00:34:09,431 views 25688 29380 SendMessageSerializer validation failed: Errors={'content': [ErrorDetail(string='The question must be at least 3 characters long.', code='min_length')]}, RequestData={'content': 'hi'}
+WARNING 2026-06-07 00:34:09,431 log 25688 29380 Bad Request: /api/conversations/12326436-160d-4eb7-8cc7-ec2bc2dde205/messages/
+INFO 2026-06-07 00:40:43,400 rag 4388 25692 Initializing RAG Pipeline models and Qdrant client...
+INFO 2026-06-07 00:40:54,770 rag 4388 25692 RAG Pipeline running on device: cpu
+INFO 2026-06-07 00:40:54,771 rag 4388 25692 Loading Embedding model: BAAI/bge-m3
+INFO 2026-06-07 00:41:13,084 rag 4388 25692 Connecting to Qdrant at localhost:6333 (collection: novamind_docs)
+INFO 2026-06-07 00:41:13,288 rag 4388 25692 Qdrant collection 'novamind_docs' connected — 76 vectors indexed
+INFO 2026-06-07 00:41:13,288 rag 4388 25692 Loading local LLM from GGUF path: C:\models\qwen2.5-3b-instruct.Q4_K_M.gguf
+INFO 2026-06-07 00:41:17,508 rag 4388 25692 RAG Pipeline initialization completed in 34.11s
+INFO 2026-06-07 00:41:17,542 rag 4388 25692 Starting retrieval for query: 'hello'
+INFO 2026-06-07 00:41:19,921 rag 4388 25692 Retrieval timings — Embed: 2.288s, Qdrant: 0.091s
+INFO 2026-06-07 00:41:19,922 rag 4388 25692   #1 [Impressions_chunk_001.txt] Score: 0.4832 (Folder: Administration)
+INFO 2026-06-07 00:41:19,922 rag 4388 25692   #2 [460425523_User feedback_chunk_001.txt] Score: 0.4579 (Folder: (me) Divalto infinity 10.7)
+INFO 2026-06-07 00:41:19,922 rag 4388 25692   #3 [CheminsHarmony_chunk_001.txt] Score: 0.4246 (Folder: Administration)
+INFO 2026-06-07 00:41:19,923 rag 4388 25692 Executing LLM generation with Qwen model...
+INFO 2026-06-07 00:41:33,987 rag 4388 25692 LLM generation completed in 14.064s
+INFO 2026-06-07 00:41:34,006 title_generator 4388 25692 Generating conversation title for: 'hello'
+INFO 2026-06-07 00:41:35,032 title_generator 4388 25692 Generated title: 'Salut' in 1.026s
+INFO 2026-06-07 00:41:35,040 views 4388 25692 Query execution: User=om@gmail.com, Conv=12326436-160d-4eb7-8cc7-ec2bc2dde205, TotalTime=50.588s, GenTime=14.064s
+WARNING 2026-06-07 00:51:09,784 exceptions 4388 15712 API error [401]: Given token not valid for any token type — view: <apps.chat.views.AskRAGView object at 0x000002106C954E10>
+WARNING 2026-06-07 00:51:09,785 log 4388 15712 Unauthorized: /api/conversations/12326436-160d-4eb7-8cc7-ec2bc2dde205/messages/
+INFO 2026-06-07 00:51:10,219 rag 4388 15712 Starting retrieval for query: 'Dans quel menu de paramétrage général de Divalto Infinity doit-on activer l'IBAN Secure et renseigner la clé d'accès (Id client) ?'
+INFO 2026-06-07 00:51:10,468 rag 4388 15712 Retrieval timings — Embed: 0.219s, Qdrant: 0.029s
+INFO 2026-06-07 00:51:10,468 rag 4388 15712   #1 [460425561_IBAN Secure_chunk_001.txt] Score: 0.6493 (Folder: Addons et solutions partenaires)
+INFO 2026-06-07 00:51:10,469 rag 4388 15712   #2 [460425561_IBAN Secure_chunk_001.txt] Score: 0.6019 (Folder: Addons et solutions partenaires)
+INFO 2026-06-07 00:51:10,469 rag 4388 15712   #3 [460425561_IBAN Secure_chunk_003.txt] Score: 0.5573 (Folder: Addons et solutions partenaires)
+INFO 2026-06-07 00:51:10,469 rag 4388 15712 Executing LLM generation with Qwen model...
+INFO 2026-06-07 00:51:37,311 rag 4388 15712 LLM generation completed in 26.842s
+INFO 2026-06-07 00:51:37,319 views 4388 15712 Query execution: User=om@gmail.com, Conv=12326436-160d-4eb7-8cc7-ec2bc2dde205, TotalTime=27.096s, GenTime=26.842s
+INFO 2026-06-07 00:57:20,621 rag 4388 13956 Starting retrieval for query: 'Par quel réseau de vérification le service IBAN Secure passe-t-il pour lutter contre la fraude et identifier le titulaire d'un IBAN ?'
+INFO 2026-06-07 00:57:20,853 rag 4388 13956 Retrieval timings — Embed: 0.205s, Qdrant: 0.027s
+INFO 2026-06-07 00:57:20,854 rag 4388 13956   #1 [460425561_IBAN Secure_chunk_001.txt] Score: 0.7341 (Folder: Addons et solutions partenaires)
+INFO 2026-06-07 00:57:20,854 rag 4388 13956   #2 [460425561_IBAN Secure_chunk_001.txt] Score: 0.7051 (Folder: Addons et solutions partenaires)
+INFO 2026-06-07 00:57:20,854 rag 4388 13956   #3 [460425561_IBAN Secure_chunk_002.txt] Score: 0.5931 (Folder: Addons et solutions partenaires)
+INFO 2026-06-07 00:57:20,854 rag 4388 13956 Executing LLM generation with Qwen model...
+INFO 2026-06-07 00:57:42,913 rag 4388 13956 LLM generation completed in 22.058s
+INFO 2026-06-07 00:57:42,927 views 4388 13956 Query execution: User=om@gmail.com, Conv=12326436-160d-4eb7-8cc7-ec2bc2dde205, TotalTime=22.302s, GenTime=22.058s
+WARNING 2026-06-07 00:59:40,348 log 4388 13956 Bad Request: /api/auth/logout/
+INFO 2026-06-07 01:00:03,185 views 4388 13956 User logged in: om@gmail.com
+WARNING 2026-06-07 01:00:15,118 log 4388 13956 Bad Request: /api/messages/80d28905-60e6-484f-9754-c8c5d77144bf/feedback/
+WARNING 2026-06-07 01:00:17,405 log 4388 13956 Bad Request: /api/messages/80d28905-60e6-484f-9754-c8c5d77144bf/feedback/
+WARNING 2026-06-07 01:00:19,155 log 4388 13956 Bad Request: /api/messages/80d28905-60e6-484f-9754-c8c5d77144bf/feedback/

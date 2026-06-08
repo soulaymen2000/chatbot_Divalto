@@ -1,0 +1,17 @@
+--- Chunk 46 [status=original_untouched] [score=1.00] ---
+Etats graphiques et tats caractres
+Etats graphiques et tats caractres
+Sous Harmony, nous distinguerons deux types d'tat imprim :
+Les tats graphiques, produits
+partir de masques d'impression graphiques crs avec l'diteur Xwin.
+Les tats caractres, produits  partir de masques d'impression caractres crs avec l'diteur Xwin.
+Remarques importantes :
+Les tats graphiques sont toujours dits en mode graphique.
+Les tats caractres peuvent tre dits aussi bien en mode graphique (mode par dfaut) qu'en mode caractres :
+Le mode graphique permet l'utilisation des fonctions de paramtrage du gestionnaire d'impression de Windows, permet la visualisation des tats caractres
+l'cran et s'affranchit de la "couche driver" spcifique
+Harmony.
+L'dition des tats caractres en mode caractres reste possible pour amliorer les performances (les temps d'impression sont gnralement meilleurs, surtout avec les imprimantes matricielles) ou pour conserver la possibilit (dcrite par ailleurs) d'imprimer des tats sans interprtation des commandes par le spouleur de Windows.
+Le mode graphique tant le mode standard d'impression sous Harmony, aussi bien pour les tats graphiques que pour les tats caractres, la suite de ce paragraphe lui est essentiellement consacre. Le mode caractres est document dans l'annexe Impressions Harmony en mode caractres.
+En mode graphique, les attributs d'impression des tats caractres sont simuls. Vous trouverez tous les renseignements concernant cette simulation dans l'annexe Simulation des attributs d'impression en mode graphique.
+---

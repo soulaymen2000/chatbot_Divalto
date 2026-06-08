@@ -1,0 +1,12 @@
+--- Chunk 43 [status=accepted] [score=0.83] ---
+Edition d'une maquette
+Edition d'une maquette
+A l'attention des dveloppeurs
+Tout programme d'dition peut tre appel pour gnrer une maquette qui pourra ensuite tre rejoue indpendamment du programme ayant produit cette dition :
+Pour constituer une maquette, crez un modle en lui affectant le type d'imprimante "Maquette" et slectionnez-le. A partir de l, lorsque vous lancez un programme d'impression, celui-ci gnre un fichier portant le nom du masque imprimante suffix par "_" et d'extension .xml (*) (**). Exemple : Si le programme charge le masque MonMasque.dhoi, le fichier gnr portera le nom MonMasque_.xml. (*) Si le programme charge plusieurs masques d'impression, le fichier portera le nom du masque faisant l'objet du premier xmiPrint. (**) Si vous souhaitez gnrer plusieurs versions de maquette
+partir d'une mme dition, activez l'option "Suffixer le nom du fichier maquette avec la date" pour le modle d'imprimante utilis. Dans ce cas, un fichier diffrent sera gnr
+chaque appel du programme d'dition. Les diffrents fichiers porteront le nom du masque suffix par "_" suivi de la date et de l'heure de l'dition. Ex
+---
+--- Chunk 44 [status=accepted] [score=0.85] ---
+emple : MonMasque_20160208_1726.xml. Les fichiers "maquette" sont stocks dans le sous-dossier "Maquettes" du dossier point par la cl ServeurXlogf du chapitre System de la base de registre (/Divalto/Sys/Maquettes par dfaut). Le lieu de stockage dpend donc de l'environnement choisi. Une maquette peut tre "rejoue" depuis l'atelier de dveloppement Xwin ou depuis l'assistant de personnalisation des impressions (Cf. leur documentation respective).
+---

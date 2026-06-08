@@ -1,0 +1,19 @@
+--- Chunk 56 [status=original_untouched] [score=1.00] ---
+Console d'administration LDAP
+Console d'administration LDAP
+La console d'administration LDAP permet, pour chaque environnement, de :
+Slectionner une rgle de filtrage de l'annuaire LDAP.
+Saisir les rgles de correspondance des utilisateurs de l'annuaire avec les modles d'utilisateurs de l'ERP.
+Saisir les rgles de correspondance des proprits de l'annuaire avec les champs de la fiche utilisateur de l'ERP.
+Paramtrer, lancer ou simuler une synchronisation.
+Activer ou dsactiver un service de synchronisation.
+Saisir les adresses mail des administrateurs
+notifier.
+Remarque :
+* Le bouton Enregistrer permet d'enregistrer immdiatement les paramtres saisis mais un enregistrement automatique est effectu
+chaque changement de page et en quittant la console.
+* Dans certains cas, il peut arriver que tous les groupes d'utilisateurs ne soient pas prsents par la console. Si cela produit, il faut crer une cl dans HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Divalto\divalto.ini\LDAP\Method et saisir la valeur 1.
+Attention :
+La console peut tre utilise en simple consultation sans droit particulier. Par contre, il faudra disposer du droit HCO pour tre autoris
+crer ou modifier des rgles de correspondance ou pour lancer une synchronisation.
+---

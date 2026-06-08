@@ -1,0 +1,23 @@
+--- Chunk 49 [status=accepted] [score=0.87] ---
+Fichier de commandes
+Fichier de commandes
+Un programme (ou une squence de programmes), avec les paramtres d'appel, peuvent tre enregistrs dans un fichier "batch" (appel sous Harmony "fichier pilote"). Attention : Ne sont pilotables que les programmes compatibles avec la version 6. Dans un fichier pilote, vous pouvez vous contenter d'enchaner les appels
+des programmes. Les rgles syntaxiques d'appel
+un programme sont exactement les mmes que celles dcrites au paragraphe Passage de paramtres aux programmes. Mais vous avez aussi
+votre disposition des commandes spcifiques : affichage d'un message, demande d'entre clavier, aiguillage en fonction de la rponse, etc. Ces commandes sont dcrites ci-dessous. L'excution d'un fichier pilote est obtenu
+la question Programme ou par une instruction Diva en remplaant le nom de programme habituel par le nom du fichier pilote prcd du signe gal ("=").
+---
+--- Chunk 50 [status=accepted] [score=0.71] ---
+Par exemple :
+=FPIL
+=/Divalto/Sys/FPILOTE
+Commandes spcifiques aux Fichiers Pilote
+Rappelons tout d'abord les rgles syntaxiques qui rgissent les appels de programmes et les passages de paramtres dans un fichier pilote :
+Chaque paramtre doit tre spar du prcdent par une "," ou commencer sur une nouvelle ligne. La touche "Entre" terminant une rponse n'est pas indique. Les rponses composes uniquement de "Entre" sont reprsentes par une ",". Une touche de fonction ou de contrle est reprsente par un code hexadcimal prcd du caractre "$" (dollar). Un paramtre qui doit tre introduit au clavier est reprsent par un "?". A la rencontre de la fin du fichier, le systme revient automatiquement au dialogue clavier. Dans un fichier pilote, les simples appels de programmes peuvent tre complts par un certain nombre de commandes supplmentaires. Ces commandes doivent toujours commencer une ligne et dbuter par le caractre "/" (barre de fraction). En voici la liste :
+/Ca b c d
+Aiguillage aprs comparaison. Selon que le caractre introduit par l'utilisateur aprs une commande /I est infrieur, gal ou suprieur
+la valeur a, le pilotage se poursu
+---
+--- Chunk 51 [status=accepted_empty_sub] [score=0.00] ---
+ivra respectivement au paragraphe de nom b, c ou d. Les noms de paragraphe doivent dbuter respectivement en colonnes 9, 17 et 25.
+---

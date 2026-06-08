@@ -1,0 +1,24 @@
+--- Chunk 37 [status=accepted] [score=0.92] ---
+Chemins d'accs implicites
+Chemins d'accs implicites
+Dans la plupart des cas, on ne prcise pas sous Harmony le nom complet d'un fichier mais uniquement son nom proprement dit. Par exemple, pour appeler le programme Xtools.dhop, on va saisir uniquement Xtools.dhop et non son nom complet c:/divalto/sys/xtools.dhop. De mme, une application qui traite le fichier compta.dhfi ne va pas ouvrir d:/fichiers/comptabilit/compta.dhfi mais simplement compta.dhfi. Deux raisons
+cela : pour les utilisateurs, ne pas tre oblig de prciser le nom complet des fichiers dans les dialogues ; ne pas figer l'emplacement physique des fichiers au niveau des programmes : c'est l'installateur qui dcide de cet emplacement et non le dveloppeur.
+---
+--- Chunk 38 [status=accepted] [score=0.80] ---
+Pour ce faire, Harmony affecte
+chaque utilisateur une liste de chemins d'accs dits "implicites" : si le chemin complet d'un fichier n'est pas indiqu, Harmony le recherche d'abord dans le premier dossier implicite puis, si ncessaire, dans le second, le troisime et ainsi de suite jusqu' trouver le fichier ; ce n'est que si la dernire tentative choue
+son tour que le systme dtectera un "Fichier non trouv". Le format des chemins implicites est identique au format des noms de fichier (mnmonique du fichier proprement dit exclus). Les chemins implicites sont stocks dans des fichiers .txt, o chaque ligne contient un chemin.
+---
+--- Chunk 39 [status=accepted] [score=0.77] ---
+Exemple :
+Avec le fichier d'implicites suivant :
+/divalto/sys/
+d:/src/
+//serveurcompta/fic/
+l'accs au fichier compta.dhfi sera successivement tent avec les noms suivants :
+/divalto/sys/compta.dhfi (<=> c:/divalto/sys/compta.dhfi)
+d:/src/compta.dhfi
+//serveurcompta/fic/compta.dhfi (<=> d:/fichiers/comptabilit/compta.dhfi sur serveurcompta)
+Aprs concatnation du chemin implicite et du nom de fichier, Harmony applique les rgles de traduction des noms de serveur et de chemin Harmony dcrites prcdemment. Utilisez l'utilitaire Xpath.dhop pour grer vos fichiers de chemins implicites. Par Xlog1.dhop, associez un fichier de chemins implicites
+chaque utilisateur.
+---

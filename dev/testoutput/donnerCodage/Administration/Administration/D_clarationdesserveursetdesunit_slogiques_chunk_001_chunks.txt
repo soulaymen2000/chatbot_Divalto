@@ -1,0 +1,7 @@
+--- Chunk 42 [status=original_untouched] [score=1.00] ---
+Dclaration des serveurs
+Dclaration des serveurs
+Le zoom permettant la dclaration des serveurs de fichiers Harmony (Xlan ou SQL) auxquels un poste a accs est appel :
+Soit depuis le choix Paramtrage : Serveurs du menu Harmony.dhop.
+Soit depuis l'utilitaire Xpath.dhop (bouton Serveurs ou choix du menu Outils : Zoom des serveurs).
+---

@@ -1,0 +1,3 @@
+--- Chunk 15 [status=original_untouched] [score=1.00] ---
+Le processus est configuré, par défaut, pour envoyer le mail au groupe d'utilisateurs val_commercial Processus Email_IBAN_KO pour les IBAN des Clients/Fournisseurs: [IMAGE: 36a72aa2922b8da35d082612aec77698f363acb45e81f3c530] Processus Email_IBAN_KO_Paie pour les IBAN des individus de la paie: [IMAGE: c0eed67cffd9eac35f16b912978d7a6e3356c8679652fde390] Exemple de mails: [IMAGE: 8288b3a4f167ca80e4b37a1a6d9e31e56ae78c76ae4fcc9918].
+---
